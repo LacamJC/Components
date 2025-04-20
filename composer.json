@@ -1,0 +1,15 @@
+{
+    "name": "ramajo/components",
+    "autoload": {
+        "psr-4": {
+            "Ramajo\\Components\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "LacamJC",
+            "email": "joaoramajo744@gmail.com"
+        }
+    ],
+    "require": {}
+}
