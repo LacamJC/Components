@@ -11,6 +11,10 @@ class ComposerStaticInit467a676ad0313db899d04528d2602752
         array (
             'Ramajo\\Components\\' => 18,
         ),
+        'L' => 
+        array (
+            'Livro\\' => 6,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -18,6 +22,14 @@ class ComposerStaticInit467a676ad0313db899d04528d2602752
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
+        'Livro\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Lib/Livro',
+        ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/../..' . '/App/Control',
     );
 
     public static $classMap = array (
@@ -29,6 +41,7 @@ class ComposerStaticInit467a676ad0313db899d04528d2602752
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit467a676ad0313db899d04528d2602752::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit467a676ad0313db899d04528d2602752::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit467a676ad0313db899d04528d2602752::$fallbackDirsPsr4;
             $loader->classMap = ComposerStaticInit467a676ad0313db899d04528d2602752::$classMap;
 
         }, null, ClassLoader::class);

@@ -2,7 +2,9 @@
     "name": "ramajo/components",
     "autoload": {
         "psr-4": {
-            "Ramajo\\Components\\": "src/"
+            "Ramajo\\Components\\": "src/",
+            "Livro\\": "Lib/Livro/",
+            "": "App/Control/"
         }
     },
     "authors": [

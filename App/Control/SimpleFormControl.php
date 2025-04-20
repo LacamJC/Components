@@ -5,7 +5,7 @@ use Livro\Widgets\Form\SimpleForm;
 
 class SimpleFormControl extends Page{
     public function __construct() {
-        parent::__construct();
+        // parent::__construct();
 
         $form = new SimpleForm('my_form');
         $form->setTitle('Titulo');
@@ -14,6 +14,8 @@ class SimpleFormControl extends Page{
         $form->addField('Telefone', 'fone', 'text', '(51) 1234-12345', 'form-control');
         $form->setAction('index.php?class=SimpleFormControl&method=onGravar');
     }
+
+  
 
     public function onGravar($params){
         echo "<pre>";

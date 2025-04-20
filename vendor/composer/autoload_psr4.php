@@ -7,4 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Ramajo\\Components\\' => array($baseDir . '/src'),
+    'Livro\\' => array($baseDir . '/Lib/Livro'),
+    '' => array($baseDir . '/App/Control'),
 );
